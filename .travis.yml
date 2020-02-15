@@ -9,5 +9,5 @@ before_install:
 
 script:
 - pytest
-- pytest --cov
+- pytest --cov ./
 - pylint
