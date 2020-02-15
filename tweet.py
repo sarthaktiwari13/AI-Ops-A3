@@ -1,5 +1,5 @@
 """
-Assignmnet 3 - Group 2
+Assignmnet 3 - Group 2 - Check unit test for Travis
 """
 import re
 import numpy as np
@@ -23,6 +23,8 @@ class TextPreprocessing:
         docs = ['glove_' + str(j) + '.txt' for j in range(1,4)]
 
         for doc in docs:
+            if i >= max_length_dictionary:
+                break
             with open(doc, 'r') as file:
                 for line in file:
                     values = line.split()
@@ -32,6 +34,7 @@ class TextPreprocessing:
                     i += 1
                     if i >= max_length_dictionary:
                         break
+
 
         # import stopwords
         self.stopwords = []
