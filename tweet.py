@@ -20,7 +20,7 @@ class TextPreprocessing:
         # import dictionary
         self.embeddings_dict = {}
         i = 0
-        docs = ['glove_' + str(j) + '.txt' for j in range(1,4)]
+        docs = ['glove_' + str(j) + '.txt' for j in range(1, 4)]
 
         for doc in docs:
             if i >= max_length_dictionary:

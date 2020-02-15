@@ -10,4 +10,5 @@ before_install:
 script:
 - pytest
 - pytest --cov ./
-- pylint ./
+- pylint ./tweet.py
+- pylint ./tweet_test.py
